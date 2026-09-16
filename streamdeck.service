@@ -1,0 +1,11 @@
+[Unit]
+Description=Stream Deck ESP8266 Shortcut Listener
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/python path to /shortcut.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
